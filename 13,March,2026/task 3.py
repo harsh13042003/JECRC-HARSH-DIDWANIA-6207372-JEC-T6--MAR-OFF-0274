@@ -27,7 +27,7 @@ print("Cart icon located")
 print(cart)
 
 # 5. locate Sign in link using descendant selector
-signin = driver.find_element(By.CSS_SELECTOR,"#nav-tools a")
+signin = driver.find_element(By.CSS_SELECTOR,"#nav-tools #nav-link-accountList")
 print("Sign in section located")
 print(signin)
 
