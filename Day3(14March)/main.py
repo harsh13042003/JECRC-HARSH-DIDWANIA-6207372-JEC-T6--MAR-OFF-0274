@@ -1,4 +1,4 @@
-# XPATH accessing
+# XPATH accessing..
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
@@ -35,7 +35,6 @@ print(xpath_des_all_upper_one)
 # From parent to child
 xpath_child_all=driver.find_element(By.XPATH,'//div[@class="nav-search-facade"]/child::span[text()="All"]')
 print(xpath_child_all)
-
 
 # Accessing preceding and following siblings
 '''
