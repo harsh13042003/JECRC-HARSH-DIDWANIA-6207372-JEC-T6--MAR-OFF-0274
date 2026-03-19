@@ -9,12 +9,12 @@ sleep(5)
 
 first_name=driver.find_element(By.ID,'firstName')
 first_name.clear()
-first_name.send_keys('Pranjal')
+first_name.send_keys('Harsh')
 
 
 last_name=driver.find_element(By.ID,'lastName')
 last_name.clear()
-last_name.send_keys('Ameta')
+last_name.send_keys('Didwania')
 
 
 email=driver.find_element(By.ID,'userEmail')
@@ -26,11 +26,11 @@ gender.click()
 
 mobile_num=driver.find_element(By.ID,'userNumber')
 mobile_num.clear()
-mobile_num.send_keys('0987654321')
+mobile_num.send_keys('08306360917')
 
 subject=driver.find_element(By.ID,'subjectsInput')
 subject.clear()
-subject.send_keys('PCM')
+subject.send_keys('PCMB')
 
 
 hobbies_one=driver.find_element(By.ID,'hobbies-checkbox-1')
