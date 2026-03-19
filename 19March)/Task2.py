@@ -9,17 +9,16 @@ driver.maximize_window()
 wait = WebDriverWait(driver, 20)
 
 full_name = wait.until(EC.visibility_of_element_located((By.ID, "username")))
-full_name.send_keys("Ajju")
+full_name.send_keys("Harsh")
 
 full_email = wait.until(EC.visibility_of_element_located((By.ID, "email")))
-full_email.send_keys("azadsr15@gmail.com")
+full_email.send_keys("Harsh13@gmail.com")
 
 telephone = wait.until(EC.visibility_of_element_located((By.ID, "tel")))
-telephone.send_keys("8597756496")
+telephone.send_keys("8306360917")
 
 file = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@multiple='multiple']")))
-if file.is_enabled():
-    file.send_keys(r"C:\Users\azads\OneDrive\Pictures\wp4906270-4k-goku-pc-wallpapers.jpg")
+if file.is_enabled():file.send_keys(r"C:\Users\azads\OneDrive\Pictures\wp4906270-4k-goku-pc-wallpapers.jpg")
 
 gender = wait.until(EC.element_to_be_clickable((By.XPATH, "//select[@name='sgender']/option[2]")))
 gender.click()
