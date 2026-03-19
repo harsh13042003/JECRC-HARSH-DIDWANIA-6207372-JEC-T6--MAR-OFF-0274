@@ -1,16 +1,12 @@
-
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
 driver = webdriver.Chrome()
 driver.maximize_window()
-
 driver.get("https://www.amazon.in/")
 
-wait = WebDriverWait(driver, 20)
+wait = WebDriverWait(driver, 25)
 search = wait.until(EC.element_to_be_clickable((By.ID, "twotabsearchtextbox")))
 search.send_keys("bmw m5 cs")
 suggestion_xpath = "//div[@class='left-pane-results-container']//div[@role='button']"
@@ -42,31 +38,3 @@ print("Price: ", price.strip())
 
 driver.quit()
 
-
-
-
-
-
-
-
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
-# from selenium.webdriver.support.ui import WebDriverWait
-# from selenium.webdriver.support import expected_conditions as EC
-# driver = webdriver.Chrome()
-# driver.get("https://www.amazon.in/?&adgrpid=155259813593&hvpone=&hvptwo=&hvadid=674893540034&hvpos=&hvnetw=g&hvrand=2286425367541488436&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9061786&hvtargid=kwd-64107830&hydadcr=14452_2316413")
-# driver.maximize_window()
-# wait = WebDriverWait(driver, 10)
-#
-# search = wait.until(EC.visibility_of_element_located((By.XPATH,"//input[@id='twotabsearchtextbox']")))
-# search.send_keys("bmw m5 cs")
-# secr = wait.until(EC.element_to_be_clickable((By.XPATH,"//div[@id = 'sac-suggestion-row-4']")))
-# secr.click()
-#
-# dropdown = wait.until(EC.presence_of_element_located((By.ID, "s-result-sort-select")))
-# dropdown.click()
-# newest = wait.until(EC.element_to_be_clickable((By.XPATH,"//a[@id='s-result-sort-select_4']")))
-# newest.click()
-#
-# free = wait.until(EC.element_to_be_clickable((By.XPATH,"//ul[@id = 'filter-p_n_free_shipping_eligible']/descendant::input")))
-# free.click()
