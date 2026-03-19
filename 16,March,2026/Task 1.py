@@ -19,4 +19,4 @@ current_url = driver.current_url
 print("Current URL:", current_url)
 if "dashboard" in current_url.lower():
     print("Successful login")
-sleep(3)
+sleep(4)
