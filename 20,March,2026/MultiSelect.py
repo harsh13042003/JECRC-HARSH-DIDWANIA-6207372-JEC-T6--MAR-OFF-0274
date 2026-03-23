@@ -19,9 +19,6 @@ driver=webdriver.Chrome()
 #     print(select.select_by_value('green'))
 #     print(select.select_by_text_value('red'))
 
-
-
-
 # NOTE :- print(select.options()) :- returns all the options
 # All the methods are applied on options only after select
 #################################################
@@ -35,8 +32,6 @@ select=Select(drop_sel)
 if select.is_multiple:
     select.select_by_index(4)
     select.select_by_visible_text("Photography")
-
-
 driver.find_element(By.XPATH,"//button[text()='Add to Playlist']").click()
 
 print([i.text for i in select.options])
