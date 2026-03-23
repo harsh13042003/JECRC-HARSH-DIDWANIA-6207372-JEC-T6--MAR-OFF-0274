@@ -1,7 +1,6 @@
 '''
 Action chains is a class that contains mouse or keyboard methods
 '''
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -76,8 +75,6 @@ assert "Dropped!"==tar_el.text,"not found"
 scroll_by_amount(x,y).perform():- in the form of axes
 scroll_from_origin(origin,x,y)
 '''
-
-
 ''' ------ Keyboard Actions ------ '''
 '''
 action=ActionChains(driver)
@@ -118,11 +115,7 @@ CONTROL is used as ctrl+a,c,v
 # # el.send_keys("asbc",Keys.ENTER)
 # action.key_down(Keys.CONTROL).send_keys('v').key_up(Keys.CONTROL).perform()
 # sleep(2)
-
-
-
 # Password Visibility
-
 driver=webdriver.Chrome()
 driver.get(r"C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&Robot\Projects\Day8(23march)\Password.html")
 driver.maximize_window()
